@@ -1,0 +1,35 @@
+/*
+ * layout.scss
+ *
+ * This section generates dynamic padding and margin utility classes
+ * based on a predefined list of sizes. The classes allow for consistent
+ * spacing throughout the project, making it easier to manage margins and padding.
+ 
+ * Author: Srikanth Lakshminarayan
+ */
+
+/* List of sizes to be used for padding and margin */
+
+$sizes: 0, 5, 10, 15, 18, 20, 25, 30, 34; 
+
+/* Loop through each size to generate padding and margin classes */
+@each $size in $sizes {
+
+    /* 
+     * .pd-{size}
+     * Generates padding classes for each size.
+     * Example: .pd-10 will apply padding of 10px.
+     */
+    .pd-#{$size} {
+        padding:#{$size}px;
+    }
+
+    /* 
+     * .mg-{size}
+     * Generates margin classes for each size.
+     * Example: .mg-10 will apply a margin of 10px.
+     */
+    .mg-#{$size} {
+        margin:#{$size}px;
+    }
+}
