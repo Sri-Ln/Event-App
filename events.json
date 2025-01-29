@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Company Annual Meetup",
+    "eventDate": "2024-12-15",
+    "description": "An annual company gathering where employees from all branches come together to discuss achievements, plans, and growth strategies for the next year. There will be team-building activities, awards distribution, and keynote speeches.",
+    "location": "Hilton Grand Ballroom, New York",
+    "imageUrl": "https://www.doola.com/wp-content/uploads/2023/12/Annual-Meeting-Minutes.jpg.webp",
+    "altText": "Company Annual Meetup",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "creationDate": "2024-10-18T15:30:00"
+  },
+  {
+    "id": 2,
+    "name": "Marketing Strategy Workshop",
+    "eventDate": "2024-11-05",
+    "description": "A one-day workshop focused on enhancing the marketing strategies for the upcoming quarter. The workshop will include a discussion on the latest market trends and best practices in digital marketing.",
+    "location": "Downtown Conference Center, Boston",
+    "imageUrl": "https://blog.ted.com/wp-content/uploads/sites/2/2024/04/TED2024_20240419_2GT6484-medium.jpg",
+    "altText": "Company Annual Meetup",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "creationDate": "2024-10-12T11:00:00"
+  },
+  {
+    "id": 3,
+    "name": "Project Kickoff Meeting",
+    "eventDate": "2024-10-25",
+    "description": "The official kickoff meeting for the new software development project. Teams will be introduced, goals will be outlined, and the project timeline will be discussed in detail.",
+    "location": "Head Office, San Francisco",
+    "imageUrl": "https://www.goskills.com/blobs/blogs/174/7.png",
+    "altText": "Project Kickoff Meeting",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "creationDate": "2024-10-01T09:00:00"
+  },
+  {
+    "id": 4,
+    "name": "Networking Event",
+    "eventDate": "2024-11-15",
+    "description": "An informal networking event designed to bring together professionals from various industries to exchange ideas, opportunities, and business contacts.",
+    "location": "Marriott Hotel, Chicago",
+    "imageUrl": "https://media.istockphoto.com/id/894635514/photo/he-makes-success-sound-easy.jpg?s=612x612&w=0&k=20&c=FLE3AvM4FzX2DJ_aYWu9vKe6SgsHXS_PP6AukrrhOpo=",
+    "altText": "Networking Event",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "creationDate": "2024-10-05T14:45:00"
+  },
+  {
+    "id": 5,
+    "name": "Annual Sales Conference",
+    "eventDate": "2024-10-30",
+    "description": "A comprehensive conference where sales teams from across the country gather to share strategies, insights, and celebrate achievements.",
+    "location": "Convention Center, Los Angeles",
+    "imageUrl": "https://media.istockphoto.com/id/1363104923/photo/diverse-modern-office-businessman-leads-business-meeting-with-managers-talks-uses.jpg?s=612x612&w=0&k=20&c=R6-SufHacJ6bCnviq37kik2Jl6RMdECybcUpEoRuMLs=",
+    "altText": "Annual Sales Conference",
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "creationDate": "2024-10-20T10:00:00"
+  },
+  {
+    "id": 6,
+    "name": "Tech Innovations Forum",
+    "eventDate": "2024-11-20",
+    "description": "A forum where industry leaders and innovators discuss the latest trends in technology and share groundbreaking ideas.",
+    "location": "Tech Hub, Seattle",
+    "imageUrl": "https://blog.bishopmccann.com/hubfs/event%20tech%20main_%20AdobeStock_352613171.jpeg",
+    "altText": "Tech Innovations Forum",
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "creationDate": "2024-10-22T12:30:00"
+  },
+  {
+    "id": 7,
+    "name": "Customer Appreciation Night",
+    "eventDate": "2024-12-01",
+    "description": "An event to show gratitude towards customers, featuring special offers, food, and entertainment.",
+    "location": "Riverside Park, New York",
+    "imageUrl": "https://media.istockphoto.com/id/515201098/photo/friends-toasting-wine-in-restaurant.jpg?s=612x612&w=0&k=20&c=wpPaa0sFEY4KeMqxKtGw9hX3iz-T1sjFqpQQal24hjA=",
+    "altText": "Customer Appreciation Night",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "creationDate": "2024-10-22T14:00:00"
+  },
+  {
+    "id": 8,
+    "name": "Employee Wellness Retreat",
+    "eventDate": "2024-11-10",
+    "description": "A day-long retreat focused on employee wellness, including yoga sessions, meditation, and workshops on work-life balance.",
+    "location": "Serenity Resort, Palm Springs",
+    "imageUrl": "https://st4.depositphotos.com/1010613/20092/i/450/depositphotos_200922112-stock-photo-young-businesspeople-sitting-desk-meditating.jpg",
+    "altText": "Employee Wellness Retreat",
+    "startTime": "08:00",
+    "endTime": "18:00",
+    "creationDate": "2024-10-23T08:00:00"
+  },
+  {
+    "id": 9,
+    "name": "Corporate Social Responsibility Summit",
+    "eventDate": "2024-12-05",
+    "description": "A summit focused on sustainable practices and corporate social responsibility initiatives, bringing together thought leaders to share insights and strategies.",
+    "location": "City Hall, Denver",
+    "imageUrl": "https://image-service.usw2.wp-prod-us.cultureamp-cdn.com/vsjTmvQrZtK4oDtIvkckpoPbGWw=/1440x0/cultureampcom/production/742/668/216/742668216fd1b8a1d9e48c78/blog-corporate-social-responsibility-program.png",
+    "altText": "Corporate Social Responsibility Summit",
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "creationDate": "2024-10-23T15:00:00"
+  }
+]
