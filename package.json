@@ -1,0 +1,14 @@
+{
+  "name": "javascript_eventplanner",
+  "version": "1.0.0",
+  "description": "Event planner application where users can manage events with details like event name, date of the event, description, location, and event creation date (date & time when the event was created and added to the planner)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass --watch scss/main.scss dist/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}
