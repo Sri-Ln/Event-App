@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planner</title>
+  <link rel="stylesheet" href="dist/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="pageTitle">Event Planner 2024</h1>
+    <div id="createBtnSection">
+      <button id="createEventBtn">New Event +</button>
+    </div>
+
+    <!-- List of events will be rendered here -->
+    <div id="eventList" class="event-list">
+      <!-- Events will be injected dynamically via JavaScript -->
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 class="modal-event-name"></h2>
+      <p><strong>Date of Event:</strong> <span class="modal-event-date"></span></p>
+      <p><strong>Location:</strong> <span class="modal-event-location"></span></p>
+      <p><strong>Event Creation Date:</strong> <span class="modal-event-creation-date"></span></p>
+      <p><strong>Description:</strong></p>
+      <textarea class="modal-event-description" readonly rows="4"></textarea>
+      <div id="editDiv">
+        <button class="edit-btn">Edit Details </button>
+      </div>
+      <button class="save-btn" style="display: none;">Save</button>
+    </div>
+  </div>
+
+  <!-- Modal Structure for New Event Creation -->
+<div id="eventCreationModal" class="modal-new">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Create New Event</h2>
+    
+    <form id="eventForm">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" name="eventName" required>
+
+      <label for="eventDate">Event Date:</label>
+      <input type="date" id="eventDate" name="eventDate" required>
+
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" name="startTime" required>
+
+      <label for="endTime">End Time:</label>
+      <input type="time" id="endTime" name="endTime" required>
+
+      <label for="eventLocation">Location:</label>
+      <input type="text" id="eventLocation" name="eventLocation" required>
+
+      <label for="eventDescription">Description:</label>
+      <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+
+      <button type="button" id="saveEventBtn">Save Event</button>
+    </form>
+  </div>
+</div>
+<!-- Snackbar Notification -->
+<div id="snackbar"><span id="snackbar-message">Event saved successfully!</span> <span id="snackbar-tick">✓</span></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
