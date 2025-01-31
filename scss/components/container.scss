@@ -1,0 +1,477 @@
+body {
+  font-family: "Anek Devanagari", sans-serif;
+  margin: 0;
+  padding: 0;
+  // color: #CBCBD7;
+  background: linear-gradient(90deg, rgba(9, 8, 26, 1) 20%, rgba(8, 33, 77, 1) 50%, rgba(9, 8, 26, 1) 80%);
+  height: 100vh;
+}
+
+.anek-devanagari-100 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 90;
+}
+
+#pageTitle{
+  color:#CBCBD7;
+}
+
+@mixin width($size) {
+  width: $size + px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  // padding: 20px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  // @include width(110);
+}
+
+;
+
+#createBtnSection {
+  display: flex;
+  justify-content: end;
+  margin: 10px 0px;
+}
+
+#createEventBtn {
+  border-radius: 5px;
+  padding: 8px 20px 6px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 15px 6px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #e4dfdf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #09081a;
+  border-radius: 6px;
+  border: 1px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.event-list {
+  display: grid;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 76%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 8px;
+}
+
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 1000px) {
+  .event-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.event {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  max-width: auto;
+  height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.event-static-content {
+  padding: 10px;
+}
+
+.event:hover .event-static-content {
+  opacity: 0.1;
+  transition: opacity 0.5s ease;
+}
+
+.event-duration {
+  font-size: 0.9rem;
+  color: #333;
+  margin:0;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000;
+  line-height: 25px;
+  min-height: 50px;
+}
+
+.event-date-time {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0px;
+}
+
+.event-location {
+  font-size: 0.85rem;
+  color: #888;
+  margin:0;
+}
+
+/* Event description overlay */
+.event-description {
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  bottom: -100%; /* Start the overlay off-screen */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  height: 50%; /* Covers only 60% of the card */
+  transition: bottom 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event:hover .event-description {
+  bottom: 0; /* Move the overlay to cover 60% of the card */
+}
+
+.expand-btn {
+  background-color: #28a745;
+  padding: 10px 15px 6px;
+  margin-bottom: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.expand-btn:hover {
+  background-color: #218838;
+}
+.event-status-upcoming,
+.event-status-completed {
+  margin: 10px 0;
+}
+
+/* Adding smooth transitions to the event container */
+.event {
+  transition: background-color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease;
+}
+
+/* Style for completed events */
+.event.completed {
+  background-color: #f3e5f5;
+  border-left: 5px solid #6a1b9a;
+  opacity: 0.6;
+}
+
+.eventStatusCheckbox{
+  cursor: pointer;
+}
+
+/* Style for upcoming events */
+.event.upcoming {
+  background-color: #f5f5f5;
+  border-left: 5px solid #1d8350;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-event-name,
+.modal-event-date,
+.modal-event-location,
+.modal-event-creation-date {
+  margin: 10px 0;
+  color:#000;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  padding: 8px 15px 15px;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height:35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #28a745;
+  margin-top: 25px;
+}
+
+#editDiv{
+  display: flex;
+  justify-content: flex-start;
+}
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.modal-event-description {
+  width: -webkit-fill-available;
+}
+
+/* Modal Container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-new {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px; /* Modal won't be wider than 600px */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  animation: slide-down 0.3s ease-out; /* Neat sliding animation */
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Styles */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  font-weight: bold;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content input[type="time"],
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Textarea Styling */
+.modal-content textarea {
+  resize: none;
+  min-height: fit-content;
+}
+
+/* Save Button */
+#saveEventBtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1d8350;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#saveEventBtn:hover {
+  background-color: #14583a;
+}
+
+/* Modal Title */
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Animations */
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Snackbar CSS */
+#snackbar {
+  visibility: hidden; /* Hidden by default */
+  min-width: 250px;
+  background-color: #4CAF50; /* Success green */
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 10px 6px;
+  position: fixed;
+  left: 20px; /* Positioned to the bottom-left */
+  bottom: 30px;
+  z-index: 1000;
+  font-size: 14px;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Checkmark styling */
+#snackbar-tick {
+  font-size: 18px;
+  margin-left: 10px;
+  color: white;
+}
+
+/* Show the snackbar */
+#snackbar.show {
+  visibility: visible;
+  opacity: 1; /* Visible and fully opaque */
+}
