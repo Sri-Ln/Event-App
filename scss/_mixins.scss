@@ -1,0 +1,10 @@
+// _mixins.scss
+
+@mixin width($size) {
+    width: $size + px;
+  }
+  
+  .pd-10 {
+    padding: 10px;
+  }
+  
