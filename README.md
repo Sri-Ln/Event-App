@@ -41,11 +41,12 @@ This project involves using JavaScript to create an event planner application wh
 3. Assignment completion. (80 Points)
 
 ## Sample Screens <be>
-![image](https://github.com/user-attachments/assets/990e0aa8-8626-4a84-a43e-f6b061984a49)<br>
-![image](https://github.com/user-attachments/assets/e021fcb3-844d-4108-be2d-ffd65e332a69)
-![image](https://github.com/user-attachments/assets/a15887dc-2bdd-41f6-aacd-90de95d6a9f5)
-![image](https://github.com/user-attachments/assets/c18325dd-9340-4010-b1a5-5a4ed246e063)
-![image](https://github.com/user-attachments/assets/0e221ef2-0ad7-4579-9e85-6535399fbebc)
-![image](https://github.com/user-attachments/assets/0069e23e-d1da-4a34-9bec-595a454119a7)
+
+![Image3](https://github.com/user-attachments/assets/e55aa787-6870-45d3-b41d-a0bf74c6a789)
+![Image2](https://github.com/user-attachments/assets/1292140d-f564-4987-a42a-fbe0891f3a28)
+![Image1](https://github.com/user-attachments/assets/f18c9eaa-ee84-4b73-8e85-7de2952c2166)
+![Image6](https://github.com/user-attachments/assets/9c3ad8bc-1eaa-4784-8c39-e746916b942c)
+![Image5](https://github.com/user-attachments/assets/5b684590-2aa7-407c-b386-8d5bade0739a)
+![Image4](https://github.com/user-attachments/assets/f9e3ca62-8207-4f9a-9c78-ce934a3a03c3)
 
 
