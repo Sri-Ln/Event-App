@@ -1,0 +1,22 @@
+/*
+ * main.scss
+ *
+ * This is the main entry point for importing all the SCSS partials. It ensures that all the necessary 
+ * styles (variables, mixins, layout, utilities, and sections) are brought together in one place, 
+ * keeping the project modular and organized.
+ * 
+ * SCSS Files:
+ * - Variables: Ensures consistent theming across the project.
+ * - Mixins: Reusable blocks of CSS for common styling patterns.
+ * - Layout: Organizes padding and margin classes.
+ * - Utilities: Provides reusable utility classes.
+ * - Sections: Defines specific styles for individual page sections.
+ 
+ * Author: Srikanth Lakshminarayan
+ */
+ 
+@use "variable";
+@use "mixins";
+@use "layout";
+@use "./components/index"; 
+// @use "styles";
